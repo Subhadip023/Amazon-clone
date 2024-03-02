@@ -1,17 +1,26 @@
-import expres from 'express';
-import product from './routes/product.mjs'
+import express from 'express'; // Correcting the import statement for Express
+import productRouter from './routes/product.mjs'; // Renaming the imported router to avoid confusion
+import bodyParser from 'body-parser';
 
-const app=expres();
-const port=3000;
+const app = express();
+const port = 3000;
 
-app.use(expres.static('public'));
-app.use('/products', product);
+app.use(express.static('public'));
+app.use('/products', productRouter);
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/',(req,res)=>{
-res.render("index.ejs")
+app.set('view engine', 'ejs'); // Setting the view engine to use EJS for rendering
+
+app.get('/', (req, res) => {
+    res.render("index.ejs");
 });
 
+// POST route
+app.post('/submit', (req, res) => {
+    console.log(req.body['brand']); // Log the received data to the console
+    res.send('Data received successfully!');
+});
 
-app.listen(port,()=>{
-console.log(`server is running on http://localhost:${port}`)
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
 });

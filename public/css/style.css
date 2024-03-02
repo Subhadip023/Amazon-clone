@@ -245,7 +245,7 @@ footer {
 .filter {
   height: 80vh;
   width: 20%;
-  background: gray;
+  /* background: gray; */
 }
 
 .all-prodcut {
@@ -299,4 +299,8 @@ padding-right: 20px;
 
 .product-details{
     margin-left: 10px;
+}
+
+.filter{
+  padding: 30px 10px;
 }
