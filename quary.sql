@@ -1,0 +1,15 @@
+INSERT INTO products (title, details, image_path) VALUES
+('Product 1', 'Details for Product 1', '/images/smartphone/1.jpg'),
+('Product 2', 'Details for Product 2', '/images/smartphone/2.jpg'),
+('Product 3', 'Details for Product 3', '/images/smartphone/3.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/4.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/5.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/6.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/7.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/8.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/9.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/10.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/11.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/12.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/13.jpg');
+('Product 3', 'Details for Product 3', '/images/smartphone/14.jpg');

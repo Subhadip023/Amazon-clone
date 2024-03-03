@@ -1,49 +1,50 @@
 <%- include('partials/header.ejs') %>
 <div class="contener">
     <div class="filter">
-        <form id="brandForm" action="/submit" method="post">
+        <form id="brandForm" action="/products" method="post">
             <legend>Featured Brands</legend>
-                <label><input type="checkbox" name="brand" value="Motorola"> Motorola</label><br>
-                <label><input type="checkbox" name="brand" value="Google"> Google</label><br>
-                <label><input type="checkbox" name="brand" value="OnePlus"> OnePlus</label><br>
-                <label><input type="checkbox" name="brand" value="SAMSUNG"> SAMSUNG</label><br>
-                <label><input type="checkbox" name="brand" value="Apple"> Apple</label><br>
-                <label><input type="checkbox" name="brand" value="Blackview"> Blackview</label><br>
-                <label><input type="checkbox" name="brand" value="TracFone"> TracFone</label><br>
-                <label><input type="checkbox" name="brand" value="Xiaomi"> Xiaomi</label><br>
-                <label><input type="checkbox" name="brand" value="Sony"> Sony</label><br>
-                <label><input type="checkbox" name="brand" value="Total by Verizon"> Total by Verizon</label><br>
-                <label><input type="checkbox" name="brand" value="BLU"> BLU</label><br>
-                <label><input type="checkbox" name="brand" value="Nokia"> Nokia</label><br>
-                <label><input type="checkbox" name="brand" value="Xgody"> Xgody</label><br>
-                <label><input type="checkbox" name="brand" value="fuxinya"> fuxinya</label><br>
-                <label><input type="checkbox" name="brand" value="WV LeisureMaster"> WV LeisureMaster</label><br>
-                <label><input type="checkbox" name="brand" value="Ulefone"> Ulefone</label><br>
-                <label><input type="checkbox" name="brand" value="LIVELY"> LIVELY</label><br>
-                <label><input type="checkbox" name="brand" value="ATEVENSEE"> ATEVENSEE</label><br>
-                <label><input type="checkbox" name="brand" value="OUKITEL"> OUKITEL</label><br>
-                <label><input type="checkbox" name="brand" value="XUANMEIKE"> XUANMEIKE</label><br>
-                <label><input type="checkbox" name="brand" value="Sefwon"> Sefwon</label><br>
-                <label><input type="checkbox" name="brand" value="Hipipooo"> Hipipooo</label><br>
-         
-            <input type="submit" value="Submit">
+            <label><input type="checkbox" name="brand" value="Motorola" <%= data.includes('Motorola') ? 'checked' : '' %>> Motorola</label><br>
+            <label><input type="checkbox" name="brand" value="Google" <%= data.includes('Google') ? 'checked' : '' %>> Google</label><br>
+            <label><input type="checkbox" name="brand" value="OnePlus" <%= data.includes('OnePlus') ? 'checked' : '' %>> OnePlus</label><br>
+            <label><input type="checkbox" name="brand" value="SAMSUNG" <%= data.includes('SAMSUNG') ? 'checked' : '' %>> SAMSUNG</label><br>
+            <label><input type="checkbox" name="brand" value="Apple" <%= data.includes('Apple') ? 'checked' : '' %>> Apple</label><br>
+            <label><input type="checkbox" name="brand" value="Blackview" <%= data.includes('Blackview') ? 'checked' : '' %>> Blackview</label><br>
+            <label><input type="checkbox" name="brand" value="TracFone" <%= data.includes('TracFone') ? 'checked' : '' %>> TracFone</label><br>
+            <label><input type="checkbox" name="brand" value="Xiaomi" <%= data.includes('Xiaomi') ? 'checked' : '' %>> Xiaomi</label><br>
+            <label><input type="checkbox" name="brand" value="Sony" <%= data.includes('Sony') ? 'checked' : '' %>> Sony</label><br>
+            <label><input type="checkbox" name="brand" value="Total by Verizon" <%= data.includes('Total by Verizon') ? 'checked' : '' %>> Total by Verizon</label><br>
+            <label><input type="checkbox" name="brand" value="BLU" <%= data.includes('BLU') ? 'checked' : '' %>> BLU</label><br>
+            <label><input type="checkbox" name="brand" value="Nokia" <%= data.includes('Nokia') ? 'checked' : '' %>> Nokia</label><br>
+            <label><input type="checkbox" name="brand" value="Xgody" <%= data.includes('Xgody') ? 'checked' : '' %>> Xgody</label><br>
+            <label><input type="checkbox" name="brand" value="fuxinya" <%= data.includes('fuxinya') ? 'checked' : '' %>> fuxinya</label><br>
+            <label><input type="checkbox" name="brand" value="WV LeisureMaster" <%= data.includes('WV LeisureMaster') ? 'checked' : '' %>> WV LeisureMaster</label><br>
+            <label><input type="checkbox" name="brand" value="Ulefone" <%= data.includes('Ulefone') ? 'checked' : '' %>> Ulefone</label><br>
+            <label><input type="checkbox" name="brand" value="LIVELY" <%= data.includes('LIVELY') ? 'checked' : '' %>> LIVELY</label><br>
+            <label><input type="checkbox" name="brand" value="ATEVENSEE" <%= data.includes('ATEVENSEE') ? 'checked' : '' %>> ATEVENSEE</label><br>
+            <label><input type="checkbox" name="brand" value="OUKITEL" <%= data.includes('OUKITEL') ? 'checked' : '' %>> OUKITEL</label><br>
+            <label><input type="checkbox" name="brand" value="XUANMEIKE" <%= data.includes('XUANMEIKE') ? 'checked' : '' %>> XUANMEIKE</label><br>
+            <label><input type="checkbox" name="brand" value="Sefwon" <%= data.includes('Sefwon') ? 'checked' : '' %>> Sefwon</label><br>
+            <label><input type="checkbox" name="brand" value="Hipipooo" <%= data.includes('Hipipooo') ? 'checked' : '' %>> Hipipooo</label><br>
+            
         </form>    </div>
     <div class="all-prodcut">
-        <div class="product-box">
-            <div class="product-img">
-                <img src="images/smartphone/51bfhhUKhTL._AC_UY218_ (1).jpg" alt="smartphone phone">
-            </div>
-            <div class="product-details">
-                <div class="product-heading">
-                   <a href="/product/1">Motorola Moto G Stylus | 2022 | 2-Day Battery | Unlocked | Made for US 4/128GB | 50MP Camera | Twilight Blue
-                    Motorola Moto G Stylus | 2022 | 2-Day Battery | Unlocked | Made for US 4/128GB | 50MP Camera | Twilight Blue               </a>  </div>
-                <div class="product-prize">
-                   <p> <strong>$129</strong></p>Typical:  <strike>$149.99 </strike> 
+        <% products.forEach(product => { %>
+            <div class="product-box">
+                <div class="product-img">
+                    <a href="/product/<%= product.id %>"><img src="<%= product.image_path %>" alt="<%= product.name %>"></a>
                 </div>
-                Delivery <strong>Thu, Mar 21</strong>
+                <div class="product-details">
+                    <div class="product-heading">
+                        <a href="/product/<%= product.id %>"><%= product.title %></a>
+                    </div>
+                    <div class="product-prize">
+                        <p><strong>$199</strong> Typical: <strike>$299</strike></p>
+                    </div>
+                    <p>Delivery <strong>abc day</strong></p>
+                </div>
             </div>
-           
-        </div>
+        <% }); %>
+        
     </div>    
 </div>
 

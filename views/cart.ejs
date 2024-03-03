@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Add any additional CSS or styling here -->
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div class="cart-items">
+        <% if (cartItems.length === 0) { %>
+            <p>Your shopping cart is empty.</p>
+        <% } else { %>
+            <% cartItems.forEach(item => { %>
+                <div class="cart-item">
+                    <h2><%= item.title %></h2>
+                    <img src="<%= item.image_path %>" alt="">
+                    <p>Price: $199</p>
+                    <!-- Add any other product details you want to display -->
+                </div>
+            <% }); %>
+        <% } %>
+    </div>
+</body>
+</html>
